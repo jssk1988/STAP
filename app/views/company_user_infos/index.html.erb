@@ -1,0 +1,44 @@
+﻿<h1>所有企业用户提交的申请资料</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Real name</th>
+    <th>Id card</th>
+    <th>Position</th>
+    <th>Tel</th>
+    <th>Company name</th>
+    <th>Found time</th>
+    <th>Industry dictionary</th>
+    <th>Register fund</th>
+    <th>Authentication files url</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @company_user_infos.each do |company_user_info| %>
+      <tr>
+        <td><%= company_user_info.user %></td>
+        <td><%= company_user_info.real_name %></td>
+        <td><%= company_user_info.id_card %></td>
+        <td><%= company_user_info.position %></td>
+        <td><%= company_user_info.tel %></td>
+        <td><%= company_user_info.company_name %></td>
+        <td><%= company_user_info.found_time %></td>
+        <td></td>
+        <td><%= company_user_info.register_fund %></td>
+        <td><%= company_user_info.authentication_files_url %></td>
+        <td><%= company_user_info.description %></td>
+        <td><%= link_to 'Show', company_user_info %></td>
+        <td><%= link_to 'Edit', edit_company_user_info_path(company_user_info) %></td>
+        <td><%= link_to 'Destroy',
+                        company_user_info, confirm: 'Are you sure?', method: :delete %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br/>
+
+<%= link_to 'New Company user info', new_company_user_info_path %>

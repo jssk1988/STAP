@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content_managelist {
+    margin-left:320px;
+	}
+#info_manage {
+	margin-left:180px;
+	}
+#content_list_left {
+	float:left;
+	}
+#content_list_right {
+	float:right; 
+	}
+
+legend {
+	font-size:18px;
+	font-weight:bold;
+	color:#508D0C;
+	border:solid 2px #D1F565;
+	background-color:#FFF;
+	text-align: center;
+	}
+
+fieldset {
+	border-style:solid; border-color:#D1F565; border-width:2px; background-color:#EBFF9B; text-align:center; margin-left:10px; margin-top:10px; width:580px;
+	}
+	
+fieldset a:link, fieldset a:visited {
+	display:block;
+	float:right;
+	text-decoration:none;
+	color:#508D0C;
+	font-size:11px;
+	padding:2px;
+	}
+	
+fieldset a:hover {
+	color:#000;
+	}	
+
+.data_in_fieldset thead {
+	font-weight:bold; background-color:#EBFF9B; text-align:center; font-size:16px;
+	}
+.data_in_fieldset {
+	margin-top:10px; background:#ffffff; font-size:16px; color:#508D0C; padding:2px; text-align:center; clear:right;
+	}
+.data_in_fieldset tbody tr:hover {
+	background-color:#EBFF9B;
+	}
+
+#all_list {
+	float:right; margin-right:20px; margin-top:20px; font-size:18px; font-weight:bold;
+	}
+#all_list:hover {
+	float:right; margin-right:20px; margin-top:20px; color:#000; font-size:18px; font-weight:bold;
+	}
+

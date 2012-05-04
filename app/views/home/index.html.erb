@@ -1,0 +1,156 @@
+﻿<div class="title_of_page">高校科技成果转化信息平台</div>
+<div id="content_homepage">
+<fieldset id="kejichengguo">
+  <legend align="left">高校科技成果</legend>
+  <%= link_to "更多...", school_articles_path %>
+  <table class="data_in_fieldset">
+    <thead>
+    <tr>
+      <th scope="col" width="300px">科技成果名称</th>
+      <th scope="col" width="150px">摘要</th>
+      <th scope="col" width="100px" align="center">发布时间</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @school_articles.each do |school_article| %>
+    <tr>
+      <td><%= school_article.title  %></td>
+      <td><%= school_article.content %></td>
+      <td><%= school_article.created_at.to_date %></td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+</fieldset>
+
+<fieldset id="kejixuqiu">
+  <legend align="left">企业科技需求</legend>
+  <%= link_to "更多...", company_articles_path %>
+  <table class="data_in_fieldset">
+    <thead>
+    <tr>
+      <th scope="col" width="300px">企业需求名称</th>
+      <th scope="col" width="150px">摘要</th>
+      <th scope="col" width="100px" align="center">发布时间</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @company_articles.each do |company_article| %>
+    <tr>
+      <td><%= company_article.title %></td>
+      <td><%= company_article.content %></td>
+      <td><%= company_article.created_at.to_date %></td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+</fieldset>
+<fieldset id="gaoxiaominglu">
+  <legend align="left">高校科研实力</legend>
+  <a href="#">更多...</a>
+  <table class="data_in_fieldset">
+    <thead>
+    <tr>
+      <th scope="col" width="300px">高校名称</th>
+      <th scope="col" width="200px" align="center">类型</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td>西北工业大学<a href="#">（查看）</a></td>
+      <td>211工程，985工程</td>
+    </tr>
+    <tr>
+      <td>西安交通大学<a href="#">（查看）</a></td>
+      <td>211工程，985工程</td>
+    </tr>
+    <tr>
+      <td>西安外国语大学<a href="#">（查看）</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>西安电子科技大学<a href="#">（查看）</a></td>
+      <td>211工程</td>
+    </tr>
+    <tr>
+      <td>西北大学<a href="#">（查看）</a></td>
+      <td>211工程</td>
+    </tr>
+    </tbody>
+  </table>
+</fieldset>
+<fieldset id="qiyeminglu">
+  <legend align="left">企业介绍</legend>
+  <a href="#">更多...</a>
+  <table class="data_in_fieldset">
+    <thead>
+    <tr>
+      <th scope="col" width="300px">企业名称</th>
+      <th scope="col" width="200px" align="center">从事行业</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+</fieldset>
+<fieldset id="xiangguanlianjie">
+  <legend align="left">产学研案例</legend>
+  <a href="#">更多...</a>
+  <table class="data_in_fieldset">
+    <thead>
+    <tr>
+      <th scope="col" width="300px">企业名称</th>
+      <th scope="col" width="200px" align="center">从事行业</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+</fieldset>
+</div>
+

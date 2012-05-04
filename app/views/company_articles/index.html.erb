@@ -1,0 +1,25 @@
+<h1>所有的企业的需求</h1>
+<table>
+  <tr>
+    <th>论文题目</th>
+    <th>负责人</th>
+    <th>摘要</th>
+    <th>发表时间</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% @company_articles.each do |company_article| %>
+      <tr>
+        <td><%= company_article.title %></td>
+        <td><%= company_article.principal %></td>
+        <td><%= company_article.content %></td>
+        <td><%= company_article.created_at.to_date %></td>
+        <td><%= link_to '更多', company_article %></td>
+        <td><%= link_to '编辑', edit_company_article_path(company_article) %></td>
+        <td><%= link_to '删除', company_article,
+                        confirm: "确定删除企业需求：#{company_article.title}", method: :delete %></td>
+
+      </tr>
+  <% end %>
+</table>

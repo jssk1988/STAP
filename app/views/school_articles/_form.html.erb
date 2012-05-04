@@ -1,0 +1,46 @@
+<% @school_article.school_keywords.build %>
+<%= form_for(@school_article) do |f| %>
+
+    <div class="field">
+      <%= f.label :title, "成果标题" %><br />
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :article_type, "成果类型" %><br />
+      <%=f.select :article_type, options_for_select([['理论研究', 0],
+                                             ['应用研究', 1],
+                                             ['软科学', 2],
+                                             ['软件开发', 3], ]) %>
+    </div>
+    <div class="field">
+      <%= f.label :principal, "负责人" %><br />
+      <%= f.text_field :principal %>
+    </div>
+    <div class="field">
+      <%= f.label :tel, "负责人电话" %><br />
+      <%= f.telephone_field :tel %>
+    </div>
+    <div class="field">
+      <%= f.label :patent_number, "专利号" %><br />
+      <%= f.text_field :patent_number %>
+    </div>
+
+    <div class="field">
+      <%= f.label :content, "摘要" %><br />
+      <%= f.text_area :content %>
+    </div>
+
+    <div class="field">
+      <%= label_tag :name,"关键字" %><br />
+      <%= text_field :school_keyword, :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :asset, "上传文件" %><br />
+      <%= f.file_field :asset %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "发表"%>
+    </div>
+<% end %>

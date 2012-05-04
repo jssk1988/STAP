@@ -1,0 +1,23 @@
+<%= form_for(@company_article) do |f| %>
+
+    <div class="field">
+      <%= f.label :title,"标题" %><br />
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :money, "投资额" %><br />
+      <%= f.text_field :money %>
+    </div>
+    <div class="field">
+      <%= f.label :principal,"负责人" %><br />
+      <%= f.text_field :principal %>
+    </div>
+    <div class="field">
+      <%= f.label :content, "摘要" %><br />
+      <%= f.text_area :content %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "发表"%>
+    </div>
+<% end %>

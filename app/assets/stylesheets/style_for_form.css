@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 这里设置form的统一风格 */
+form {
+	color:#508D0C; font-weight:bold; margin-top:10px;
+	}
+	
+/* 这里设置登录页面*/
+#form_for_login {
+	margin-left:auto; margin-right:auto; margin-top:50px; width:200px;
+	}
+#button_for_login {
+	margin-left:auto; margin-right:auto; margin-top:5px;
+	}
+#button_for_login  li {
+	margin-left:auto; margin-right:auto;
+	}
+	
+#form_for_getkey {
+	margin-left:auto; margin-right:auto; margin-top:50px; width:200px; 
+	}
+
+/* 这里设置注册页面*/
+
+#form_for_register {
+	width:35%; margin-left:auto; margin-right:auto; margin-top:40px;
+	}	
+input.txt {
+	width:150px; border-style:solid; border-color:#508D0C; border-width:1px; float:right;
+	}
+textarea.txt {
+	width:400px; border-style:solid; border-color:#508D0C; border-width:1px; float:right; font-size:13px;
+	}
+form label {
+	float:left; margin-left:10px; font-size:14px; 
+	}	
+form input {
+	float:right; margin-right:5px; height:auto; 
+	}	
+#button_for_register {
+	margin-left:auto; margin-top:20px;
+	}	
+#button_for_register  li {
+	float:right; margin-right:10px;
+	}
+
+input.upfile{
+	clear:right; border-style:solid; border-color:#508D0C; border-width:1px;
+	}
+/*#title_of_login {margin-top:50px; margin-bottom:10px; font-weight:bold; font-size:24px; color:#508D0C;}
+#select {font-size:14px; width:156px; height:22px; text-align:center}*/
+
+
+

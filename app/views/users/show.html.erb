@@ -1,0 +1,18 @@
+﻿<p>
+  <b>Email/用户名:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>创建时间:</b>
+  <%= @user.created_time %>
+</p>
+
+<p>
+  <b>修改时间:</b>
+  <%= @user.updated_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

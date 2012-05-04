@@ -1,0 +1,23 @@
+<h1>所有的科研人员申请资料</h1>
+<table>
+  <tr>
+    <th>用户身份证</th>
+    <th>姓名</th>
+    <th>所在科研院所</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% @school_user_infos.each do |school_user_info| %>
+      <tr>
+        <td><%= school_user_info.id_card %></td>
+        <td><%= school_user_info.real_name %></td>
+        <td><%= school_user_info.school_name %></td>
+        <td><%= link_to '更多', school_user_info %></td>
+        <td><%= link_to '编辑', edit_school_user_info_path(school_user_info) %></td>
+        <td><%= link_to '删除', school_user_info,
+                        confirm: "确定删除用户名：#{school_user_info.real_name}", method: :delete %></td>
+
+      </tr>
+  <% end %>
+</table>

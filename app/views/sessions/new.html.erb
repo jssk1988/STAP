@@ -1,0 +1,27 @@
+<div id="nav">
+    <ul>
+     <li><a href="密码找回.html"><strong>忘记密码</strong></a></li> 
+    </ul>
+</div>
+<div class="title_of_page">高校科技成果转化信息平台</div>
+
+<div id="form_for_login">
+<fieldset>
+<legend  align="center">请登录</legend>
+<%= form_for(:session, :url => sessions_path) do |f| %>
+<div class="field">
+<%= f.label :email %><br />
+<%= f.email_field :email %>
+</div>
+<div class="field">
+<%= f.label :password %><br />
+<%= f.password_field :password %>
+</div>
+<div class="actions">
+<%= f.submit "登录" %>
+</div>
+<% end %>
+</fieldset>
+</div>
+<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+

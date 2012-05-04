@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title><%=title %></title>
+  <%= stylesheet_link_tag "style" %>
+  <%= stylesheet_link_tag "style_for_nav" %>  
+  <%= stylesheet_link_tag "style_for_fieldset" %>
+  <%= javascript_include_tag "application" %>
+</head>
+<body>
+<%= render :partial=> "/home/header"%>
+
+<div><h2><strong><%=flash[:error]%></strong></h2></div>
+<div><h2><strong><%=flash[:success]%></strong></h2></div>
+<div><h2><strong><%=flash[:notice]%></strong></h2></div>
+<%= yield %>
+<div id="debug">
+<%= debug(params) if Rails.env.development? %>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+﻿<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @company_user_info.user %>
+</p>
+
+<p>
+  <b>Real name:</b>
+  <%= @company_user_info.real_name %>
+</p>
+
+<p>
+  <b>Id card:</b>
+  <%= @company_user_info.id_card %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @company_user_info.position %>
+</p>
+
+<p>
+  <b>Tel:</b>
+  <%= @company_user_info.tel %>
+</p>
+
+<p>
+  <b>Company name:</b>
+  <%= @company_user_info.company_name %>
+</p>
+
+<p>
+  <b>Found time:</b>
+  <%= @company_user_info.found_time %>
+</p>
+
+<p>
+  <b>Industry dictionary:</b>
+
+</p>
+
+<p>
+  <b>Register fund:</b>
+  <%= @company_user_info.register_fund %>
+</p>
+
+<p>
+  <b>Authentication files url:</b>
+  <%= @company_user_info.authentication_files_url %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @company_user_info.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_company_user_info_path(@company_user_info) %> |
+<%= link_to 'Back', company_user_infos_path %>

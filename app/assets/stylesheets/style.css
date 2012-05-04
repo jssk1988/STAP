@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	text-align:left;
+	background-image:url("/assets/background.jpg");
+	background-repeat:repeat-x;
+}
+img {border:none;}
+a {text-decoraction:none; outline:none;}
+ul,li {margin:0; padding:0; list-style:none;}
+
+/* 以下加载给首页 */
+#content_homepage {
+	margin-top:15px; z-index:1;
+	}
+
+#kejichengguo {
+	width:520px; margin-left:70px; float:left; height:250px;
+	}
+
+#kejixuqiu {
+	width:520px; margin-left:40px; float:left; height:250px;
+	}
+
+#gaoxiaominglu {
+	width:320px; margin-left:70px; float:left; height:200px; margin-top:20px;
+	}
+#qiyeminglu, #xiangguanlianjie {
+	width:325px; margin-left:42px; float:left; height:200px; margin-top:20px;
+	}
+#link_to_other {
+	clear:both; margin-left:70px; padding-top:10px;
+	}
+#link_to_other label {
+	font-size:18px;
+	font-weight:bold;
+	color:#508D0C;
+	}
+#link_to_other a:link, #link_to_other a:visited {
+	margin-left:10px;
+	}
+	
+/* 以下加载给科技成果/科技需求页面 */
+#content_article {
+	margin-top:30px; 
+	}
+#article_list {
+	margin-left:65px; float:left; margin-right:25px;
+	}
+#article_list form {
+	border:0px none #000;
+	color:#508D0C;
+	font-size:14px;
+	padding: 0px;
+	margin-left:auto;
+	}
+#searchbox {
+	float:left;
+	margin-bottom:2px;
+	width:800px;
+	}
+form input.search_keyword {
+	width:150px; 
+	}
+form input.checkbox, input.search_botton {
+	margin-left:2px; 
+	}
+form select {
+	width:120px;
+    /*float:right;     */
+	}
+.article_table {
+	clear:left;
+	}
+.data thead {
+	font-weight:bold; background-color:#EBFF9B; text-align:center; font-size:16px;
+	}
+.data {
+	margin-top:10px; background:#ffffff; border:#D1F565 2px solid; font-size:14px; color:#508D0C; padding:2px; text-align:center;
+	}
+.data tbody tr:hover {
+	background-color:#EBFF9B;
+	}
+.data tbody tr a:link, a:visited {
+	text-decoration:none; color:#508D0C; font-size:12px;
+	}
+.data tbody tr a:hover {
+	text-decoration:none; color:#000; font-size:12px;
+	}
+#new_article {
+	float:right; margin-top:5px; margin-right:10px;
+	}
+#new_article a {
+	text-decoration:none; color:#508D0C; font-size:16px; 
+	}
+#new_article a:hover {
+	 text-decoration:underline; color:#000; font-size:16px; 
+	}
+#botton_for_page {
+	float:right;
+	}
+#pre_page, #next_page {
+	margin-left:2px; margin-top:5px; 
+	}
+#hot {
+	margin-top:2px;
+	}
+#hot_keyword a:link, #hot_keyword a:visited{
+	float:left;
+	text-decoration:none;
+	color:#508D0C;
+	font-size:16px;
+    margin:5px;
+	}
+#hot_keyword a:hover {
+	float:left
+	text-decoration:none;
+	color:#000;
+	font-size:16px;
+    margin:5px;
+	}
+#hot_keyword {
+	width:300px; height:160px;
+	}	
+#hot_article {
+	width:300px; margin-top:20px; height:200px;
+	}
+	
+/* 以下加载给账户管理 */
+#content_manage {
+	margin-top:10px;
+	}
+#left {
+	float:left; margin-left:50px; text-align:left; margin-top:10px;
+	}
+#mid {
+	float:left; margin-top:10px; margin-left:30px;
+	}
+#right {
+	float:right; text-align:center;   
+	}
+#manage_right {
+	float:right; text-align:center; margin-right:50px; margin-top:12px;
+	}
+		
+#info_history {
+	height:490px; width:450px; 
+	}
+#P_in_info_history {
+	background-color:#FFF; padding:5px; margin-top:10px; height:200px; margin-left:5px; margin-right:5px;
+	}
+p.title_for_info {
+	font-size:large; color:#508D0C;
+	}
+p.content_for_info {
+	color:#508D0C; font-size:14px;
+	}
+p.content_for_info a:link, p.content_for_info a:visited {
+	display:block; text-decoration:none; color:#508D0C; font-size:14px; margin-left:5px; float:none;
+	}
+p.content_for_info a:hover {
+	display:block; text-decoration:underline; color:#000; font-size:14px; margin-left:5px; float:none;
+	}	
+#del_and_manage {
+	float:right; width:100%;
+	}
+#del_and_manage a:link, #del_and_manage a:visited {
+	display:block; text-decoration:none; color:#508D0C; font-size:12px; margin-left:10px;
+	}
+#del_and_manage a:hover {
+	display:block; text-decoration:underline; color:#000; font-size:12px; margin-left:10px;
+	}
+#bottom_button_in_history {
+	float:right; 
+	}
+#bottom_button_in_mid {
+	float:right; margin-top:170px;
+	}
+		
+#search_histroy {
+	height:220px; width:350px;
+	}	
+#search_histroy p {
+	font-size:18px; display:block; margin:5px; float:left; color:#508D0C;
+	}
+#check_histroy {
+	height:220px; width:350px; margin-top:30px;
+	}
+#personal_info {
+	height:490px; width:220px; 
+	}
+#form_for_personal_info {
+	margin-top:20px; text-align:left; color:#508D0C;
+	}
+
+/* 以下加载给发布新成果 */
+#content_new {
+	margin-top:30px;
+	}
+#content_new_right {
+	float:right;
+	margin-right:90px;
+	width:700px;
+	height: 400px;
+	}
+#area_for_info {
+	width:700px; height:350px; border-style:solid; border-color:#D1F565; border-width:1px;
+	}
+#content_new_left {
+	float:left; margin-left:90px; position:absolute;
+	}
+label.label_for_new{
+	color:#508D0C; font-size:16px;
+	}
+label.label_for_check{
+	color:#508D0C; font-size:15px; line-height:25px;
+	}
+input.input_for_new {
+	margin-bottom:5px; width:310px; border-style:solid; border-color:#D1F565; border-width:1px;
+	}
+select.kind_for_new_article {
+	margin-top:10px; margin-right:5px; width:70px; height:22px; margin-bottom:5px;
+    }
+select.kind_for_new_need {
+	margin-top:10px; width:80px; margin-bottom:5px;
+	}
+
+/*以下加载给当前信息查看*/
+#now_article {
+	float:left; width:750px; height:450px; margin-left:60px;
+	}
+#right_for_nowarticle {
+	float:right; margin-right:60px; 
+	}
+table.table_for_article_info {
+	font-size:14px;
+	color:#508D0C;
+	text-align:left;
+	}
+table.table_for_article_info td {
+	padding:3px;
+	}
+label.title_for_article {
+	font-weight:bold; font-size:16px; color:#508D0C;
+	}
+p.content_for_article {
+	font-size:14px; color:#508D0C; text-align:left; padding:5px; height:280px;
+	}
+
+
+/* 以下加载给产学研*/	
+#content_chanxueyan{
+	margin-top:15px;
+	}	
+#chuanxueyan_list {
+	margin-left:180px;
+	}
+#searchbox_for_chanxueyan {
+	font-size:14px;
+	color:#508D0C;
+	width: 930px;
+	}
+#searchbox_for_chanxueyan input.search_keyword {
+	width:200px;
+	}
+#searchbox_for_chanxueyan input.checkbox {
+	margin-left:10px;
+	}
+#chanxueyan_botton_for_page {
+	clear:both; margin-left:800px; padding:5px;
+	}
+select.select_for_chanxueyan {
+	float:right;
+	}
+
+/* 以下加载给高校与企业*/	
+#gaoxiao_and_qiye {
+	margin-top:10px;
+	}
+#gaoxiao {
+	float:left; margin-left:100px; width:500px;
+	}
+#qiye {
+	float:right; margin-right:100px; width:500px;
+	}
+fieldset.gaoxiao_qiye_info {
+	width:80%; margin-left:auto; margin-right:auto; height:400px;
+	}
+/*debug */
+#debug{
+	clear: both;
+	margin-top:100px;
+}

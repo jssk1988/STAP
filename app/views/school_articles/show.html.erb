@@ -1,0 +1,43 @@
+﻿<div class="title_of_page" xmlns="http://www.w3.org/1999/html">高校科技成果转化信息平台</div>
+<div id="content_article">
+
+  <fieldset id="now_article">
+    <legend>当前浏览</legend>
+    <label class="title_for_article"><%= @school_article.title %></label>
+    <table class="table_for_article_info">
+      <tbody>
+      <tr>
+        <td>应用行业：</td>
+        <td>科研院校：</td>
+        <td>负责人：<%= @school_article.principal %></td>
+        <td>联系方式<%= @school_article.tel %></td>
+      </tr>
+      <tr>
+        <td>专利号：<%= @school_article.patent_number %></td>
+        <td>专业类型：</td>
+        <td>获奖名称</td>
+        <td>浏览次数：</td>
+      </tr>
+      </tbody>
+    </table>
+    <p class="content_for_article"><%= @school_article.content %></p>
+    <p>关键字：<%= join_tags(@school_article)  %></p>
+    <% if @school_article.asset.exists? %>
+    <h3>有关附件：</h3>
+    <div class="asset">
+      <p>
+        <%= link_to File.basename(@school_article.asset.path),
+                    @school_article.asset.url
+        %>
+      </p>
+      <p><small><%= number_to_human_size(@school_article.asset.size) %>
+        (<%= @school_article.asset.content_type %>)</small></p>
+    </div>
+    <% end %>
+    <div id="botton_for_nowarticle">
+      <input type="submit" name="pre_page" id="pre_page" value="pre"/>
+      <input type="submit" name="next_page" id="next_page" value="next"/>
+    </div>
+  </fieldset>
+</div>
+

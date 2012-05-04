@@ -1,0 +1,23 @@
+﻿<%= form_for(@school_user_info) do |f| %>
+
+  <div class="field">
+    <%= f.label :real_name %><br />
+    <%= f.text_field :real_name %>
+  </div>
+    <div class="field">
+      <%= f.label :id_card %><br />
+      <%= f.text_field :id_card %>
+    </div>
+    <div class="field">
+      <%= f.label :school_name %><br />
+      <%= f.text_field :school_name %>
+    </div>
+    <div class="field">
+      <%= f.label :qualification %><br />
+      <%= f.text_field :qualification %>
+    </div>
+ 
+  <div class="actions">
+    <%= f.submit "申请"%>
+  </div> 
+<% end %>

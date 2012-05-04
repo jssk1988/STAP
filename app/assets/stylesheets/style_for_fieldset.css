@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+legend {
+	font-size:18px;
+	font-weight:bold;
+	color:#508D0C;
+	border:solid 2px #D1F565;
+	background-color:#FFF;
+	text-align: center;
+	}
+
+fieldset {
+	border-style:solid; border-color:#D1F565; border-width:2px; background-color:#EBFF9B; text-align:center;
+	}
+	
+fieldset a:link, fieldset a:visited {
+	display:block;
+	float:right;
+	text-decoration:none;
+	color:#508D0C;
+	font-size:12px;
+    margin-left:5px;
+	}
+	
+fieldset a:hover {
+	color:#000; margin-left:5px;
+	}	
+
+.data_in_fieldset thead {
+	font-weight:bold; background-color:#EBFF9B; text-align:center; font-size:16px;
+	}
+.data_in_fieldset {
+	margin-top:20px; background:#ffffff; font-size:14px; color:#508D0C; padding:2px; text-align:center; clear:right;
+	}
+.data_in_fieldset tbody tr:hover {
+	background-color:#EBFF9B;
+	}

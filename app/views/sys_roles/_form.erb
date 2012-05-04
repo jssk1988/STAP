@@ -1,0 +1,14 @@
+<%= form_for(@sys_role) do |f| %>
+    <div class="field">
+      <%= f.label :role_name, "角色名称：" %><br />
+      <%= f.text_field :role_name %>
+    </div>
+    <div class="field">
+      <%= f.label :description, "角色简述：" %><br />
+      <%= f.text_field :description %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "发表"%>
+    </div>
+<% end %>

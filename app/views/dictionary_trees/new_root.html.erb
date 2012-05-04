@@ -1,0 +1,5 @@
+<%= form_tag '/dictionary_trees' do %>
+    <%= label_tag(:name, "目录父节点：") %>
+    <%= text_field_tag(:name) %>
+    <%= submit_tag("新建父节点") %>
+<% end %>

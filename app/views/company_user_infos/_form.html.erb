@@ -1,0 +1,54 @@
+﻿<%= form_for(@company_user_info) do |f| %>
+  <% if @company_user_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@company_user_info.errors.count, "error") %> prohibited this company_user_info from being saved:</h2>
+
+      <ul>
+      <% @company_user_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :real_name %><br />
+    <%= f.text_field :real_name %>
+  </div>
+  <div class="field">
+    <%= f.label :id_card %><br />
+    <%= f.text_field :id_card %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :tel %><br />
+    <%= f.text_field :tel %>
+  </div>
+  <div class="field">
+    <%= f.label :company_name %><br />
+    <%= f.text_field :company_name %>
+  </div>
+  <div class="field">
+    <%= f.label :found_time %><br />
+    <%= f.date_select :found_time %>
+  </div>
+  <div class="field">
+    <%= f.label :register_fund %><br />
+    <%= f.text_field :register_fund %>
+  </div>
+  <div class="field">
+    <%= f.label :authentication_files_url %><br />
+    <%= f.text_field :authentication_files_url %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

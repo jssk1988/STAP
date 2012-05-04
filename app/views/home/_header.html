@@ -1,0 +1,16 @@
+﻿<div id="nav">
+    <ul>
+	<li><strong><%= link_to "首页", root_path %></strong></li>
+    <li><strong><%= link_to "帮助", help_path %></strong></li>
+	<% if signed_in? %>
+		<li><strong><%=link_to "个人信息", current_user%></strong></li>
+		<li><strong><%= link_to "注销", signout_path, :method => :delete %></strong></li>
+		<% if has_applied? %>
+		<li><strong><%=link_to "申请", home_apply_path%></strong></li>
+		<% end %>
+	<% else %>
+		<li><strong><%=link_to "注册", signup_path%></strong></li>
+		<li><strong><%= link_to "登录", signin_path %></strong></li>
+	<% end %>
+    </ul>
+</div>
